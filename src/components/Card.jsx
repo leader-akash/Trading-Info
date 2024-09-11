@@ -22,10 +22,10 @@ const StrategyCards = ({ strategy }) => {
     <div className="bg-black border text-center text-white px-6 py-3 rounded-2xl  w-72">
       <h2 className="text-xl text-[#38e964] font-medium ">{strategy?.symbol}</h2>
       <h3 className="text-md font-semibold my-6">{strategy?.title}</h3>
-      <p className="text-sm mt-2 text-gray-400  h-20">
+      <div className="text-sm mt-2 text-gray-400  h-20">
         {strategy?.description}
         <p className="text-[#ffd900] cursor-pointer">read more</p>
-      </p>
+      </div>
 
       <div className="relative w-24 h-24 mx-auto my-6">
         <CircularProgressbar

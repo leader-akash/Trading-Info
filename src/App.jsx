@@ -7,14 +7,34 @@ import NavSections from './components/NavSections';
 function App() {
   const [strategies, setStrategies] = useState([]);
 
+
+  // mock json server will not run on deployment site because it will run on localhost, so i used the json from public folder for deployment purpose. Although i have commented the code for mock server if we use json mock api
+
+  const fetchData = async() => {
+    try{
+      const res = await axios.get('/data/db.json') // for deployment purpose only
+      setStrategies(res?.data?.strategies)
+    }
+    catch(err){
+      console.log('error', err)
+    }
+  }
+
+  // If we use mock json server api in local, Run json server before use
+  // json-server --watch db.json --port 5000
+
+  // const fetchData = async() => {
+  //   try{
+  //     const res = await axios.get("http://localhost:5000/strategies") // localhost:5000
+  //     setStrategies(res?.data)
+  //   }
+  //   catch(err){
+  //     console.log('error', err)
+  //   }
+  // }
+
   useEffect(() => {
-    axios.get('http://localhost:5000/strategies')
-      .then(response => {
-        setStrategies(response.data);
-      })
-      .catch(error => {
-        console.error('There was an error fetching the data!', error);
-      });
+    fetchData();
   }, []);
 
   return (
