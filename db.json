@@ -1,0 +1,57 @@
+{
+    "strategies": [
+      {
+        "id": 1,
+        "symbol": "FLT.AX",
+        "title": "Parabolic SAR strategy",
+        "description": "The parabolic SAR is a technical indicator  parabolic SAR is a technical indicator  parabolic SAR is a indicator...",
+        "backtest_win": 57.82,
+        "copiers": 399,
+        "total_trades": 14824,
+        "successful_outcomes": 8283,
+        "successful_percentage": 57.03,
+        "average_sharpe_ratio": 0.12,
+        "max_drawdown": 0.07
+      },
+      {
+        "id": 2,
+        "symbol": "IGO.AX",
+        "title": "RSI oversold strategy",
+        "description": "The relative strength index is most relative strength index is most relative strength index is most...",
+        "backtest_win": 54.52,
+        "copiers": 287,
+        "total_trades": 856,
+        "successful_outcomes": 465,
+        "successful_percentage": 55.42,
+        "average_sharpe_ratio": 0.13,
+        "max_drawdown": 0.04
+      },
+      {
+        "id": 3,
+        "symbol": "PNI.AX",
+        "title": "Kaufmann and SMA Strategy",
+        "description": "The kaufmann strength index is most kaufmann strength index is most kaufmann strength index is most ...",
+        "backtest_win": 62.52,
+        "copiers": 129,
+        "total_trades": 1300,
+        "successful_outcomes": 812,
+        "successful_percentage": 62.42,
+        "average_sharpe_ratio": 0.06,
+        "max_drawdown": 0.01
+      },
+      {
+        "id": 4,
+        "symbol": "WEX.AX",
+        "title": "sma crossover strategy",
+        "description": "The sma strength index is most sma strength index is most sma strength index is most ...",
+        "backtest_win": 38.95,
+        "copiers": 177,
+        "total_trades": 1753,
+        "successful_outcomes": 683,
+        "successful_percentage": 38.95,
+        "average_sharpe_ratio": 0.15,
+        "max_drawdown": 0.06
+      }
+    ]
+  }
+  
